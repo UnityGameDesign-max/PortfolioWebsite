@@ -1,0 +1,50 @@
+@import "../App.css";
+
+.navigation__list {
+  display: none;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation__logo {
+  width: 52px;
+}
+.navigation__section-hamBar {
+  width: 28px;
+}
+
+.navigation__section-links{
+  text-decoration: none;
+}
+.navigation__section-items{
+  list-style-type: none;
+  padding: 1em 0;
+  font-size: 1.4rem;
+  margin-right: 1.5em;
+  color: var(--COLOR-SECONDARY);
+  text-decoration: none;
+}
+
+.navigation__section #hidden{
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media(min-width:768px){
+  .navigation__section-items{
+    display: flex;
+  }
+  .navigation__list {
+    display: flex;
+  }
+  .navigation__section-hamBar{
+    display: none;
+  }
+}
