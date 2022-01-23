@@ -1,0 +1,134 @@
+@import "../App.css";
+
+.home__hero-section{
+    margin-top: 200px;
+}
+
+.home__hero-section-tumi{
+    font-size:1.3rem;
+    color: var(--COLOR-TEXT-SECONDARY);
+    padding: 22px 0;
+}
+
+.home__hero-details{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2em;
+}
+
+.home__hero-section-slogan{
+    color: var(--COLOR-TEXT-SECONDARY);
+    max-width: 260px;
+    font-size: 1.2rem;
+    margin-bottom: 4em;
+}
+
+.home__hero-button{
+    display: block;
+    color: var(--COLOR-TEXT-PRIMARY);
+    padding: 0.7em 0.4em;
+    position: relative;
+    border:2px solid var(--COLOR-PRIMARY);
+    overflow: hidden;
+    transition: all .35s;
+    cursor: pointer;
+}
+
+.home__hero-button:before,
+.home__hero-button:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: var(--COLOR-PRIMARY);
+    z-index: 1;
+    transition: all .35s;
+}
+
+.home__hero-button:before{
+    opacity: 0.5;
+}
+
+.home__hero-button:after{
+    transition-delay: .2s;
+}
+
+.home__hero-button:hover{
+    color: var(--COLOR-BACKGROUND);
+}
+
+.home__hero-button:hover:before,
+.home__hero-button:hover:after{
+  top: 0;
+}
+
+/* svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+  
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: var(--COLOR-PRIMARY );
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+} */
+
+.home__hero-section-text{
+    background: -webkit-linear-gradient(left ,var(--COLOR-PRIMARY-200), var(--COLOR-SECONDARY));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.8rem;
+    max-width: 560px;
+}
+
+.home__hero-section-scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.scroll-text{
+    color: var(--COLOR-TEXT-PRIMARY);
+    margin-bottom: 0.4em;
+}
+.home__hero-section-scroll{
+    position: absolute;
+    right: 30px;
+    top: 500px;
+}
+
+.scroll-text{
+    transform: rotate(90deg);
+}
+
+.scroll-text{
+    animation: Move 2s linear infinite;
+}
+
+@keyframes Move{
+    0%, 100% {
+        transform: translateY(-10px);
+      }
+      50% {
+        transform: translateY(-30px);
+    }
+}

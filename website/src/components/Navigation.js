@@ -4,6 +4,7 @@ import Logo from '../assets/Logo.svg';
 import HamBurger from '../assets/HamBurger.svg';
 import { Link } from 'react-router-dom';
 import '../styles/Navigation.css';
+import CloseIcon from '@mui/icons-material/Close';
 
 function Navigation() {
 
@@ -17,7 +18,11 @@ function Navigation() {
                         return <Link className="navigation__section-links" to={item.url}><li className="navigation__section-items">{item.title}</li></Link>        
                     })}
                 </ul>
-                <Link to="/" onClick={() => SetshowNavLinks(!showNavLink)}><img src={HamBurger} alt="navBar-menu" className="navigation__section-hamBar" /></Link>
+                <Link to="/" onClick={() => SetshowNavLinks(!showNavLink)}>
+                    {showNavLink ? <CloseIcon className="close-menu"/> :
+                    <img src={HamBurger} alt="navBar-menu" className="navigation__section-hamBar" />
+                    }
+                </Link>
             </nav>
         </div>
     )

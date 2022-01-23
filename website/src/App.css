@@ -1,9 +1,16 @@
 :root{
   --COLOR-BACKGROUND: #332354;
+  --COLOR-PRIMARY-200: #6615EB;
   --COLOR-PRIMARY: #794AFF;
   --COLOR-SECONDARY: #CE48A9;
   --COLOR-TEXT-PRIMARY: #FFF;
-  --COLOR-TEXT-SECONDARY: #BEBDBD;
+  --COLOR-TEXT-SECONDARY: #bebdbd52;
+}
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
 }
 
 *{

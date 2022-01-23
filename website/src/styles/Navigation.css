@@ -15,6 +15,10 @@
   width: 28px;
 }
 
+.close-menu{
+  color: var(--COLOR-TEXT-PRIMARY);
+}
+
 .navigation__section-links{
   text-decoration: none;
 }

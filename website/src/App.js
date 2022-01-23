@@ -1,12 +1,13 @@
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Navigation from "./components/Navigation";
+import Home from "./pages/Home.js";
+
 
 function App() {
   return (
     <div className="app container">
       <Router>
-        <Navigation />
+        <Home />
       </Router>
     </div>
   );
