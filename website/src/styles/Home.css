@@ -1,34 +1,35 @@
 @import "../App.css";
 
 .home__hero-section{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .home__hero-section-tumi{
-    font-size:1.3rem;
+    font-size:1.2rem;
     color: var(--COLOR-TEXT-SECONDARY);
     padding: 22px 0;
 }
 
 .home__hero-details{
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     padding-inline: 2em;
 }
 
 .home__hero-section-slogan{
-    color: var(--COLOR-TEXT-SECONDARY);
-    max-width: 260px;
-    font-size: 1.2rem;
+    color: rgb(170, 169, 169);
+    max-width: 280px;
+    font-size: 1.3rem;
     margin-bottom: 4em;
 }
 
 .home__hero-button{
     display: block;
     color: var(--COLOR-TEXT-PRIMARY);
-    padding: 0.7em 0.4em;
+    padding: 1.2em 1.9em;
     position: relative;
+    font-size: 1.06rem;
     border:2px solid var(--COLOR-PRIMARY);
     overflow: hidden;
     transition: all .35s;
@@ -95,8 +96,8 @@
     background: -webkit-linear-gradient(left ,var(--COLOR-PRIMARY-200), var(--COLOR-SECONDARY));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 3.8rem;
-    max-width: 560px;
+    font-size: 4.8rem;
+    max-width: 770px;
 }
 
 .home__hero-section-scroll{
@@ -121,14 +122,16 @@
 }
 
 .scroll-text{
-    animation: Move 2s linear infinite;
+    animation: Move 1s linear infinite;
+    position: absolute;
+    bottom: 102px;
 }
 
 @keyframes Move{
     0%, 100% {
-        transform: translateY(-10px);
+        bottom: 80px;
       }
       50% {
-        transform: translateY(-30px);
+        bottom: 102px;
     }
 }

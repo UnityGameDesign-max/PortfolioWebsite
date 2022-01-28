@@ -27,8 +27,12 @@
   padding: 1em 0;
   font-size: 1.4rem;
   margin-right: 1.5em;
-  color: var(--COLOR-SECONDARY);
+  color: var(--COLOR-PRIMARY);
   text-decoration: none;
+}
+
+.navigation__section-items:hover{
+  color: var(--COLOR-SECONDARY);
 }
 
 .navigation__section #hidden{
