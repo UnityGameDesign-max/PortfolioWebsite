@@ -1,0 +1,43 @@
+@import "../App.css";
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Dongle:wght@300&family=Lato:wght@300;400&family=Neonderthaw&family=Oswald:wght@200&family=Roboto:wght@300&family=Space+Mono&display=swap');
+.projectCard h4{
+    font-family: 'Space Mono', monospace;
+    margin: 13px 0 0 0;
+    color: var(--COLOR-SECONDARY);
+    letter-spacing: 2px;
+
+}
+
+.projectCard__image{
+    padding: 12em 14em;
+    background: url(../../public/logo192.png) no-repeat cover;
+    border-radius: 5px;
+}
+
+.projectCard-section{
+    display: flex;
+    justify-content: center;
+    
+}
+.projectCard__description{
+    margin-top: 50px;
+}
+.projectCard__description h3{
+    margin-top: 5px;
+    color: var(--COLOR-TEXT-PRIMARY);
+}
+
+.languages{
+    color: var(--COLOR-TEXT-SECONDARY);
+}
+.projectCard__description-card{
+    color: rgb(135, 135, 136);
+    padding: 18px 30px;
+    max-width: 500px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    background-color: #211141;
+    margin-right: -30px;
+    z-index: 1;
+    margin-bottom: 1.2em;
+}

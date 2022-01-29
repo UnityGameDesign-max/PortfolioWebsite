@@ -5,13 +5,14 @@
 }
 
 .home__hero-section-tumi{
-    font-size:1.2rem;
+    font-size:1.7rem;
     color: var(--COLOR-TEXT-SECONDARY);
-    padding: 22px 0;
+    padding: 26px 0;
+    font-family: 'Dancing Script', cursive;
 }
 
 .home__hero-details{
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     padding-inline: 2em;
@@ -19,34 +20,34 @@
 
 .home__hero-section-slogan{
     color: rgb(170, 169, 169);
-    max-width: 280px;
-    font-size: 1.3rem;
+    max-width: 480px;
+    font-size: 1.2rem;
     margin-bottom: 4em;
 }
 
+
+
 .home__hero-button{
-    display: block;
-    color: var(--COLOR-TEXT-PRIMARY);
-    padding: 1.2em 1.9em;
-    position: relative;
-    font-size: 1.06rem;
-    border:2px solid var(--COLOR-PRIMARY);
-    overflow: hidden;
-    transition: all .35s;
-    cursor: pointer;
+  color: var(--COLOR-TEXT-PRIMARY);
+  border: 1px solid var(--COLOR-PRIMARY-200);
+  padding: 1.4em 1.95em;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .home__hero-button:before,
 .home__hero-button:after{
     position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: -100%;
-    left: 0;
-    background: var(--COLOR-PRIMARY);
-    z-index: 1;
-    transition: all .35s;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background:  var(--COLOR-SECONDARY);
+  z-index: -1;
+  transition: all .35s
 }
 
 .home__hero-button:before{
@@ -58,44 +59,20 @@
 }
 
 .home__hero-button:hover{
-    color: var(--COLOR-BACKGROUND);
+    color: var(--COLOR-TEXT-PRIMARY);
 }
 
 .home__hero-button:hover:before,
 .home__hero-button:hover:after{
   top: 0;
 }
-
-/* svg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    fill: none;
-    stroke: #fff;
-    stroke-dasharray: 150 480;
-    stroke-dashoffset: 150;
-    transition: 1s ease-in-out;
-}
-  
-.btn:hover {
-    transition: 1s ease-in-out;
-    background: var(--COLOR-PRIMARY );
-}
-
-.btn:hover svg {
-    stroke-dashoffset: -480;
-}
-
-.btn span {
-    color: white;
-    font-size: 18px;
-    font-weight: 100;
-} */
-
 .home__hero-section-text{
-    background: -webkit-linear-gradient(left ,var(--COLOR-PRIMARY-200), var(--COLOR-SECONDARY));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(-60deg ,var(--COLOR-PRIMARY-200), var(--COLOR-SECONDARY), var(--COLOR-PRIMARY));
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    animation: title-animate 5s ease-in-out infinite;
+    margin-top: 10px;
     font-size: 4.8rem;
     max-width: 770px;
 }
@@ -105,7 +82,6 @@
     flex-direction: column;
     align-items: center;
 }
-
 
 .scroll-text{
     color: var(--COLOR-TEXT-PRIMARY);
@@ -125,6 +101,48 @@
     animation: Move 1s linear infinite;
     position: absolute;
     bottom: 102px;
+}
+
+.home__skills{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 0 36px;
+}
+
+.home__skills-heading{
+    font-size: 1.9rem;
+    text-align: center;
+    color: var(--COLOR-TEXT-PRIMARY);
+}
+.home__skills-description{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    color: rgb(170, 169, 169);
+}
+.home__skills-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__skills-bottom,
+.home__skills-top{
+    display: flex;
+}
+
+@keyframes title-animate{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 
 @keyframes Move{
