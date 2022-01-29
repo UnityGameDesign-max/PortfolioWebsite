@@ -12,7 +12,8 @@ function ProjectCard({ title, description, githubLink, image, languages }) {
           <div className="languages">{languages}</div>
           <div className="link">{githubLink}</div>
         </div>
-        <div className="projectCard__image">{image}</div>
+        <div className="projectCard__image">
+        </div>
       </div>
     </div>
   );
