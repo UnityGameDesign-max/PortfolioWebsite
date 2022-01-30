@@ -1,18 +1,18 @@
 export const navigationItems = [
     {
-        title: "Home",
+        title: "<Home />",
         url: "/home",
     },
     {
-        title: "My skills",
+        title: "<My skills />",
         url: "/skills",
     },
     {
-        title: "About",
+        title: "<About />",
         url: "/about"
     },
     {
-        title: "Contact",
+        title: "<Contact />",
         url: "/contacts"
     }
 ];

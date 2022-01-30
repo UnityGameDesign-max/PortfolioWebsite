@@ -3,10 +3,16 @@ import Navigation from "../components/Navigation";
 import SkillCard from "../components/SkillCard";
 import Socials from "../components/Socials";
 import ProjectCard from "../components/ProjectCard";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import AmazonPic from "../assets/amazon-clone.screenshot.jpg.png";
 import "../styles/Home.css";
+import { useEffect } from "react";
 
 function Home() {
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, [])
   return (
     <div className="home">
       <Navigation />
@@ -14,15 +20,15 @@ function Home() {
       <div className="home__hero">
         <div className="home__hero-details">
           <pre className="home__hero-section-tumi">&lt;tumelo&gt;</pre>
-          <h1 className="home__hero-section-text">
-            I Create Applications for the Web
-          </h1>
-          <p className="home__hero-section-slogan">
+            <h1 data-aos="fade-up" className="home__hero-section-text">
+              I Create Applications for the Web
+            </h1>
+          <p data-aos="fade-up" data-aos-delay="250" className="home__hero-section-slogan">
             I am a software engineer specializing in building and designing
             amazing user interface.
           </p>
           <div className="home__hero-button-wrapper">
-            <button className="home__hero-button">See Projects</button>
+            <button data-aos="fade-up" data-aos-delay="450" className="home__hero-button">See Projects</button>
           </div>
           <pre className="home__hero-section-tumi">&lt;/tumelo&gt;</pre>
         </div>
@@ -56,6 +62,7 @@ function Home() {
         <div className="home__skills-cards">
           <div className="home__skills-top">
             <SkillCard
+              data-aos="fade-up" data-aos-delay="450"
               icon={
                 <svg
                   width="37"
