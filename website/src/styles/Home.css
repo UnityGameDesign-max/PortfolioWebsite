@@ -68,7 +68,7 @@
   top: 0;
 }
 .home__hero-section-text{
-    background-image: linear-gradient(-60deg ,var(--COLOR-PRIMARY-200), var(--COLOR-SECONDARY), var(--COLOR-PRIMARY));
+    background-image: linear-gradient(-60deg ,var(--COLOR-PRIMARY-200), var(--COLOR-SECONDARY),  rgba(0, 153, 255, 0.705), var(--COLOR-PRIMARY));
     background-clip: text;
     color: transparent;
     background-size: 300%;

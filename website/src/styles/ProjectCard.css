@@ -1,5 +1,6 @@
 @import "../App.css";
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Dongle:wght@300&family=Lato:wght@300;400&family=Neonderthaw&family=Oswald:wght@200&family=Roboto:wght@300&family=Space+Mono&display=swap');
+
 .projectCard h4{
     font-family: 'Space Mono', monospace;
     margin: 13px 0 0 0;
@@ -9,21 +10,17 @@
 }
 
 .projectCard__image{
-    
     padding: 12em 14em;
-    background: url('../assets/amazon-clone.screenshot.jpg.png') no-repeat center/cover;
+    background: url('../assets/TakeAlotScreenshot.png') no-repeat center/cover;
     border-radius: 5px;
 }
 
 .projectCard-section{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;   
 }
-.projectCard__description{
-   
-}
+
 .projectCard__description h3{
     margin-top: 5px;
     margin-left: 90px;

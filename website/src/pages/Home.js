@@ -5,9 +5,10 @@ import Socials from "../components/Socials";
 import ProjectCard from "../components/ProjectCard";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import AmazonPic from "../assets/amazon-clone.screenshot.jpg.png";
+import TakeAlotClone from "../assets/TakeAlotScreenshot.png";
 import "../styles/Home.css";
-import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useEffect } from "react"; 
 
 function Home() {
   useEffect(() => {
@@ -189,13 +190,16 @@ function Home() {
       </div>
       <div className="project">
         <h2 className="project-title">SOME OF MY WORK</h2>
+        <Link target='_blank' to='https://takealot-clone-ef7fb.web.app/'>
         <ProjectCard
-          title="Amazon Clone"
-          description="An E-commerce site which was inspired by Amazon, made and built to showcase some development skills.Create an account buy items and add them to the cart and checkout to pay."
-          languages="React | FireBase | CSS | Stripe | Material UI"
+          title="TakeAlot Clone"
+          description="An E-commerce site which was inspired by Takealot.com, made and built to showcase some development skills.Create an account buy items and add them to the cart and checkout to pay."
+          languages="React | FireBase | FakeAPIStore | Material UI | Webhook"
           githubLink=""
-          image={<AmazonPic />}
+          image={TakeAlotClone}
         />
+        </Link>
+        
       </div>
     </div>
   );
